@@ -274,6 +274,7 @@ nav {
   right: 20px;
   top: 23px;
   transition: scale 0.1s ease-out;
+  z-index: 20;
 }
 
 .hamburger:hover {
