@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BROTOTYPE</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="./sytles.css" />
+    <link rel="stylesheet" href="./mediaquery.css" />
+    <!-- boxicons-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Anton static font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- gradient blob -->
+    <div id="blob"></div>
+    <div id="blur"></div>
+
+    <!-- navbar -->
+    <header id="home">
+      <nav>
+        <h1 class="hvr nav-title" data-value="BROTOTYPE">
+          <span>BRO</span>TOTYPE
+        </h1>
+        <div class="nav_right">
+          <div class="contact_btn" id="openModalBtn" data-value="CONTACT NOW">
+            Career Path
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- hamburger -->
+    <div class="hamburger">
+      <i class="bx bx-menu" style="scale: 1.3"></i>
+    </div>
+
+    <!-- navbar overlay -->
+    <div class="overlay" id="overlay">
+      <div class="overlay-content">
+        <i class="bx bx-x close-btn" id="close-btn"></i>
+      </div>
+      <div class="overlay_container">
+        <div class="overlay_left">
+          <a href="#home" class="hvr" data-value="Home">Home</a>
+          <a href="#about" class="hvr" data-value="About">About</a>
+          <a href="#stories" class="hvr" data-value="Stories">Stories</a>
+          <a href="#ceo" class="hvr" data-value="CEO">CEO</a>
+          <a href="#contact" class="hvr" data-value="Contact">Contact</a>
+        </div>
+        <div class="overlay_right">
+          <h5>GET IN TOUCH</h5>
+          <div>
+            <p>talk@brototype.com</p>
+            <p>+91 7034 395 811</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT MODAL -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="close">&times;</span>
+        <form action="" class="modal__form" id="form2">
+          <input
+            type="text"
+            placeholder="Name"
+            name="Name"
+            class="modal__input"
+            pattern="[A-Za-z ]{3,20}"
+            title="Please enter only letters(minimum 3 characters)"
+            required
+          />
+
+          <input
+            type="tel"
+            name="ContactNo"
+            placeholder="Contact No:"
+            class="modal__input"
+            pattern="[6-9][0-9]{9}"
+            title="Please enter a valid phone digit(starting with 6 to 9)"
+            required
+          />
+
+          <input
+            type="email"
+            name="Email"
+            placeholder="Email"
+            class="modal__input"
+            title="Please enter a valid email address"
+            required
+          />
+
+          <textarea
+            name="Description"
+            cols="0"
+            rows="3"
+            class="modal__input"
+            placeholder="Short Description About You"
+            title="Please enter between 5 and 200 characters"
+            required
+          ></textarea>
+
+          <button type="submit" id="submit1" class="modal_btn">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- MAIN -->
+    <main class="container">
+      <!-- landing page -->
+      <section class="landing section">
+        <h1 class="landing_h1">
+          Want to become a <br />
+          <span class="landing_gradient">Software Engineer</span> ?
+        </h1>
+        <p class="landing_p">
+          If you know how to read and write in English and have the basic
+          knowledge in Mathematics, congratulations ! you too can become a
+          software engineer!
+        </p>
+
+        <a class="explore_btn" href="#about">Explore More</a>
+      </section>
+
+      <!-- about section -->
+      <section class="about" id="about">
+        <h2 class="section_title">About Us</h2>
+        <div class="about_container">
+          <div
+            class="about_left"
+            style="display: flex; justify-content: center; align-items: center"
+          >
+            <div
+              class="about_video"
+              style="margin-bottom: auto; margin-top: auto"
+            >
+              <iframe
+                src="https://www.youtube.com/embed/hm97DNF9Z_8?si=5Qs9H5gRoaqY5wsR"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="about_right">
+            <p>
+              Brocamp is a <span class="text_yellow">7 months</span> intensive
+              inhouse training program exclusively for people who are willing to
+              do the hard work to build a high paying
+              <span class="text_green">software engineering</span> career.
+
+              <br />
+              <br />
+              Brocamp is not just another training institute where you go learn
+              something and leave forever. Brocamp is a
+              <span class="text_yellow">community of high performance</span>
+              people who support each other and to win together. Each Brocamp
+              grad will always be in touch with our community and help the new
+              buddies as a way of giving back.
+              <br />
+              <br />
+              The Brocamp program is completely
+              <span class="text_green">FREE</span> upfront and our students pay
+              <span class="text_yellow">zero tuition fee</span> until they land
+              a job. We believe everyone should get the right opportunities to
+              learn, hence we do not charge any fees upfront.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Success Stories -->
+      <section class="success section" id="stories">
+        <h2 class="section_title">Success Stories</h2>
+        <p class="success_p">
+          In the last 3 years
+          <span class="gradient_text">1265+</span>
+          students placed with an average salary package of
+          <span class="gradient_text">&#8377;37000</span> per month
+        </p>
+        <div class="success_grid">
+          <div class="card">
+            <img src="./images/1.webp" alt="image" loading="lazy" />
+          </div>
+          <div class="card">
+            <img src="./images/2.webp" alt="image" loading="lazy" />
+          </div>
+          <div class="card">
+            <img src="./images/3.webp" alt="image" loading="lazy" />
+          </div>
+          <div class="card">
+            <img src="./images/4.webp" alt="image" loading="lazy" />
+          </div>
+          <div class="card">
+            <img src="./images/5.webp" alt="image" loading="lazy" />
+          </div>
+          <div class="card">
+            <img src="./images/6.webp" alt="image" loading="lazy" />
+          </div>
+          <div class="card">
+            <img src="./images/7.webp" alt="image" loading="lazy" />
+          </div>
+          <div class="card">
+            <img src="./images/8.webp" alt="image" loading="lazy" />
+          </div>
+          <div class="card">
+            <img src="./images/9.webp" alt="image" loading="lazy" />
+          </div>
+          <div class="card">
+            <img src="./images/10.webp" alt="image" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <!-- youtube -->
+      <section class="youtube section">
+        <p>
+          Want to know how people just like you
+          <span class="gradient_text">transformed</span> their career?
+        </p>
+        <div class="yt_container">
+          <!-- card 1 -->
+          <div class="yt_card">
+            <div class="yt_video" style="margin-bottom: auto; margin-top: auto">
+              <iframe
+                src="https://www.youtube.com/embed/6DFDpS4jivw?si=Gqdbu8d7G3koJ7-j"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <p>
+              Housewife to Software Engineer | Story of Shahida | Placed from
+              Brocamp
+            </p>
+          </div>
+          <!-- card 2 -->
+          <div class="yt_card">
+            <div class="yt_video" style="margin-bottom: auto; margin-top: auto">
+              <iframe
+                src="https://www.youtube.com/embed/ihxPYWtwCYk?si=HyKmeRSNGUyuXyJZ"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <p>
+              Plus Two Student Becomes Software Engineer with 12 LPA | Jobin
+              Selvanose
+            </p>
+          </div>
+          <!-- card 3 -->
+          <div class="yt_card">
+            <div class="yt_video" style="margin-bottom: auto; margin-top: auto">
+              <iframe
+                src="https://www.youtube.com/embed/S241bF17_PU?si=rq5dq5TSEAfF0gxT"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <p>Fresher becomes Software Engineer for 13 LPA salary</p>
+          </div>
+          <!-- card 4 -->
+          <div class="yt_card">
+            <div class="yt_video" style="margin-bottom: auto; margin-top: auto">
+              <iframe
+                src="https://www.youtube.com/embed/TWGS1wCMLZ8?si=RNvZBN4cPmsUgd4e"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <p>Degree Failed | Placed for ₹8 LPA from Brocamp</p>
+          </div>
+          <!-- card 5 -->
+          <div class="yt_card">
+            <div class="yt_video" style="margin-bottom: auto; margin-top: auto">
+              <iframe
+                src="https://www.youtube.com/embed/W6-wPWI1EGY?si=AOtuD_9s7xEdR-ja"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <p>Plus Two (+2) Students Must Watch</p>
+          </div>
+          <!-- card 6 -->
+          <div class="yt_card">
+            <div class="yt_video" style="margin-bottom: auto; margin-top: auto">
+              <iframe
+                src="https://www.youtube.com/embed/E-_4l9di_5Y?si=y9DNqWGgdJ_d5F25"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <p>
+              Mobile Shopkeeper Becomes Software Engineer from Brocamp | Adarsh
+              Raj
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CEO -->
+      <section class="ceo" id="ceo">
+        <p>
+          Want to connect directly with
+          <span class="gradient_text">Nikhil Kilivayil</span>?
+        </p>
+        <div class="ceo_container">
+          <div class="ceo_img">
+            <img src="/images/ceo.png" loading="lazy" alt="" />
+          </div>
+          <div class="ceo_info">
+            <h2>Nikhil Kilivayil</h2>
+            <h5>
+              Founder & <span style="color: var(--green)">CEO</span>, Brototype
+            </h5>
+            <p>
+              Hi all, if you think there is something that I should know whether
+              it is a concern, query, feedback or whatever please write me
+              directly at
+              <a href="mailto:ceo@brototype.com">ceo@brototype.com</a>
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--contact  -->
+      <section class="contact section" id="contact">
+        <h2 class="section_title">Contact Us</h2>
+
+        <div class="contact__container">
+          <div class="contact_left">
+            <h1>GET IN TOUCH</h1>
+            <h4>Our Experts Will Guide You To Find A Suitable Career Path</h4>
+          </div>
+          <form action="" class="contact__form" id="form1">
+            <input
+              type="text"
+              placeholder="Name"
+              name="Name"
+              class="contact__input"
+              pattern="[A-Za-z ]{3,20}"
+              title="Please enter only letters(minimum 3 characters)"
+              required
+            />
+
+            <input
+              type="tel"
+              name="ContactNo"
+              placeholder="Contact No:"
+              class="contact__input"
+              pattern="[6-9][0-9]{9}"
+              title="Please enter a 10-digit phone number starting with 6 to 9"
+              required
+            />
+
+            <input
+              type="email"
+              name="Email"
+              placeholder="Email"
+              class="contact__input"
+              title="Please enter a valid email address"
+              required
+            />
+
+            <textarea
+              name="Description"
+              cols="0"
+              rows="3"
+              class="contact__input"
+              placeholder="Short Description About You"
+              pattern=".{5,200}"
+              title="Please enter between 5 and 200 characters"
+              required
+            ></textarea>
+
+            <button type="submit" id="submit2" class="contact_btn">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <!-- left -->
+      <div class="footer_top">
+        <div class="footer_left">
+          <div class="footer_box">
+            <p>For Admission Queries:</p>
+            <a href="tel:+917034395811">+91 7034 395 811</a>
+          </div>
+          <div class="footer_box">
+            <p>For Official Queries:</p>
+            <a href="tel:+917034395811">+91 7034 395 811</a>
+          </div>
+          <div class="footer_box">
+            <p>For Job opportunities:</p>
+            <a href="tel:+917594846113">+91 7594 846 113</a>
+          </div>
+        </div>
+        <!-- right -->
+        <div class="footer_right">
+          <a href="">
+            <i class="bx bxl-youtube footer_icon"></i>
+            <p>Youtube</p>
+          </a>
+          <a href=""
+            ><i class="bx bxl-instagram-alt footer_icon"></i>
+            <p>Instagram</p>
+          </a>
+          <a href=""
+            ><i class="bx bxl-linkedin-square footer_icon"></i>
+            <p>LinkedIn</p>
+          </a>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <p class="footer__copy">
+          &#169; All rights reserved. | Inspired by Poppr.be
+        </p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
